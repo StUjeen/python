@@ -9,22 +9,22 @@
     -> 1
 '''
 import random
-
+# input data
 n = int(input("Enter N: "))
 x = int(input("Enter X: "))
-array = [0]
-i = 0
+array = list()
+# create array
 for i in range(n):
-    rand = random.randint(0, 100)
+    rand = random.randint(0, 10)
     array.append(rand)
-
+# counter
 count = 0
-for i in range(len(array)):
+for i in range(n):
     if array[i] == x:
         count += 1
     else:
         continue
-
+# print results
 print(array)
 print(x)
 print(f"-> {count}")
